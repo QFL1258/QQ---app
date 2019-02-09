@@ -1,0 +1,102 @@
+page{
+  background:#fff;
+}
+.header{
+  width:100%;
+  background:linear-gradient(to top,rgb(235, 243, 235) 0%,rgb(212, 212, 51) 50%,rgb(54, 185, 72) 100%);
+}
+.one{
+  width:100%;
+  height:30px;
+}
+.img{
+  width:200px;
+  height:200px;
+  margin:0 auto;
+}
+.img>image{
+  width:100%;
+  height:100%;
+}
+.text{
+  width:200px;
+  margin:20rpx auto;
+  text-align:center;
+  font-size:14px;
+}
+.text-1{
+  margin:10px 0;
+}
+.details{
+  width:100%;
+  height:67px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding:10px 10px;
+  border-bottom:1px solid rgb(223, 217, 217);
+}
+.price{
+  color:red;
+  font-size:20px;
+}
+.button{
+  background:black;
+  color:#fff;
+  padding:2px 4px;
+  font-size:10px;
+  margin-left:10px;
+  border-radius:4px;
+}
+.xl{
+  color:rgb(92, 91, 91);
+  font-size:14px;
+  width:180px;
+  text-align:right;
+}
+.body{
+  width:100%;
+  
+}
+.js{
+  font-size:18px;
+  width:50px;
+  
+  padding:20px 0;
+  margin:0 auto;
+  text-align: center;
+}
+.qw{
+  width:90%;
+  overflow: hidden;
+  margin:0 auto;
+  font-size:14px;
+  color:rgb(82, 80, 80);
+  line-height:30px;
+}
+.ss,.lb{
+  width:200px;
+  margin:15px auto;
+  font-size:16px;
+  text-align: center;
+}
+.lb{
+  font-size:18px;
+}
+.music-details{
+  width:90%;
+  height:50px;
+  margin:5px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom:1px solid rgb(223, 217, 217);
+}
+.id{
+  font-size:14px;
+  color:rgb(58, 57, 57);
+}
+.name{
+  font-size:16px;
+  margin-left:5px;
+}

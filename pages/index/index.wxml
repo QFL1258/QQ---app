@@ -1,0 +1,77 @@
+<view class='index-container'>
+   <!--轮播图-->
+  <view class='slider'>
+    <swiper autoplay='10'>
+      <swiper-item wx:for="{{list}}" wx:key="index">
+        <image src="{{item.img_url}}" lazy-load mode="aspectFill" ></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 最新上架 -->
+  <view class='headline'>
+    <text>最新上架</text>
+  </view>
+  <view class='wrap'>
+    <view class='wrap-list' wx:for="{{roostlist}}" wx:key="index" bindtap='play_music' data-nid='{{item.nid}}'>
+      <view class='wrap-item'>
+        <text class='title ell'>{{item.title}}</text>
+        <text class='ft'>{{item.name}}</text>
+        <text class='ft'>￥{{item.money}}</text>
+      </view>
+      <image src='{{item.img_url}}'></image>
+    </view>
+  </view>
+  <!-- 本月热销 -->
+  <view class='headline'>
+    <text>本月热销</text>
+  </view>
+  <view class='wrap'>
+    <view class='wrap-big' wx:for="{{sell}}" wx:key="index">
+      <view class='mon-list'>
+        <view class='mon-item'>
+          <text class='title ell'>{{item.title}}</text>
+          <text class='ft ell'>{{item.name}}</text>
+          <text class='ft'>￥{{item.money}}</text>
+        </view>
+        <image src='{{item.img_url}}'></image>
+      </view>
+      <view class='mon-sell ft'>
+        <text>本月热销{{item.sell}}张</text>
+      </view>
+    </view>
+      
+  </view>
+  <!-- 畅销总榜 -->
+  <view class='headline'>
+    <text>畅销总榜</text>
+  </view>
+  <view class='well'>
+     <view class='well-big' wx:for="{{well}}" wx:key="index" data-id="{{item.nid}}" bindtap='handle1'>
+      <view class='well-image'>
+        <image src='{{item.img_url}}'></image>
+      </view>
+      <view class='well-item'>
+        <text class='title'>{{item.title}}</text>
+        <text class='ft'>{{item.name}}</text>
+        <text class='ft ft_1'>已售{{item.sell}}万张</text>
+      </view>
+      <view class='well-ranking'>
+        <text class='ft_color'>{{item.cattle}}</text>
+      </view>
+    </view>
+  </view>
+  <!--查看更多-->
+  <view class='more' bindtap='getwell'>
+    <text>查看更多 ></text>
+  </view>
+  <!-- 底部 -->
+  <view class='footer'>
+    <text bindtap='skip'>买赠记录</text>
+    <text>|</text>
+    <text bindtap="point" >活动说明</text>
+  </view>
+  <view class="footet-image">
+    <image src='/pages/img/1.png'></image>
+    <text>QQ音乐</text>
+  </view>
+</view>

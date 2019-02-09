@@ -1,0 +1,67 @@
+<!--pages/me/me.wxml-->
+<view class='my-info'>
+   <view class='divider'></view>
+   <view class='cell'>
+      <view class='cell-me'>
+        <image src='{{attr}}' bindtap='selesctImg'></image>
+      </view>
+      <view class='cell-info'>
+        <text class='title cap'>昵称：</text>
+        <text class='ft'>QQ号：1781052210</text>
+      </view>
+      <view class='cell-code'>
+        <image src='/pages/img/code.png'></image>
+      </view>
+  </view>
+   <view class='divider'></view>
+    <view class='card'>
+       <view class='card-me'>
+        <image src='/pages/img/money.png'></image>
+      </view>
+      <view class='card-info'>
+        <text class='title cap'>QQ精品推荐(内侧)</text>
+      </view>
+    </view>
+    <view class='divider'></view>
+    <view class='card'>
+       <view class='card-me'>
+        <image src='/pages/img/indent.png'></image>
+      </view>
+      <view class='card-info'>
+        <text class='title cap'>我的订单</text>
+      </view>
+    </view>
+    <view class='card'>
+       <view class='card-me'>
+        <image src='/pages/img/member.png'></image>
+      </view>
+      <view class='card-info'>
+        <text class='title cap'>会员中心</text>
+      </view>
+    </view>
+    <view class='card'>
+       <view class='card-me'>
+        <image src='/pages/img/money.png'></image>
+      </view>
+      <view class='card-info'>
+        <text class='title cap'>我的优惠券</text>
+      </view>
+    </view>
+    <view class='card'>
+       <view class='card-me'>
+        <image src='/pages/img/f.png'></image>
+      </view>
+      <view class='card-info'>
+        <text class='title cap'>我的F码</text>
+      </view>
+    </view>
+    <view class='divider'></view>
+    <view class='card'>
+      <view class='card-me'>
+      <image src='/pages/img/set.png'></image>
+    </view>
+    <view class='card-info'>
+      <text class='title cap'>设置</text>
+    </view>
+  </view>
+</view>

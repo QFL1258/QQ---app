@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/me/me",
+    "pages/general/general",
+    "pages/skip/skip",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ddd",
+    "navigationBarTitleText": "QQ音乐数字专辑",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ddd",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "pages/img/首页.png",
+      "selectedIconPath": "pages/img/首页1.png"
+    },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "pages/img/我的.png",
+        "selectedIconPath": "pages/img/我的1.png"
+      }
+    ]
+  }
+}

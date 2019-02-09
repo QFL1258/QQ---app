@@ -1,0 +1,50 @@
+/* pages/me/me.wxss */
+/*卡片样式*/
+.cell{
+  background-color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+.cell-me{
+  width: 80rpx;
+  height: 80rpx;
+  padding: 20rpx;
+}
+.cell-me image{
+  width: 100%;
+  height: 100%;
+}
+.cell-info{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  width: 335rpx;
+  height: 85rpx;
+  text-align: left;
+}
+.cell-info .cap{
+  padding: 5rpx;
+}
+.cell-code{
+  width: 50rpx;
+  height: 50rpx;
+  margin: auto 0;
+}
+.cell-code image{
+  width: 100%;
+  height: 100%;
+}
+.card-me{
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+  margin: 26rpx 20rpx  0rpx 40rpx;
+}
+.card-me image{
+  width: 100%;
+  height:100%;
+}
+.card-info{
+   padding: 32rpx;
+}

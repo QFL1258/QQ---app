@@ -1,0 +1,46 @@
+<view class="header" wx:for="{{list}}" wx:key="index">
+<view class="one"></view>
+  <view class="img"><image src='{{item.img_url}}' lazy-load='true'></image></view>
+  <view class="text">
+    <view class="text-1">
+      <text>{{item.title}}</text>
+    </view>
+    <view class='text-1'>
+      <text>{{item.name}}</text>
+    </view> 
+  </view>
+  <view class="details">
+   <text class="price">￥{{item.price}}</text>
+   <text class="button">正版</text>
+   <text class="button">无损</text>
+   <text class="xl">已售{{item.xl}}张</text>
+  </view>
+</view>
+<view class="body"  bindtap='gd'>
+  <view class="js">简介</view>
+  <view class="qw" style="height:{{height}}px">
+    无论何时何地，梦想都是人生的必需品 
+口中念着“NAMANANA”的能量暗号 
+用100%的梦想 + 200%的行动力，浇灌出让万物生长的1000%生命力 
+中英文双碟同步出发，带你进入张艺兴的“梦不落雨林”，邀你开启一场冒险之旅 
+
+「制作人张艺兴全程主理，让你听见最完整的Lay Zhang」 
+影、视、歌、综艺全面进击的张艺兴，始终怀揣着对音乐最质朴的初心。他一直希望，能够作出代表华人的原创音乐。这是他的梦想，也是他赋予自己的使命。 
+
+在第三张个人专辑里，延续前两张的经验，张艺兴加入了全新的制作技巧，来描绘他心目中的M-POP。作为专辑的制作人，张艺兴全面参与了专辑的词、曲、编、制每一个细节。更在全世界范围内，邀请优秀的音乐人，和他共同打造这片“梦不落雨林”。 
+
+大到专辑的音乐风格、内容表述；小到每首歌曲的和声配唱、某一个电子音色的选择，张艺兴全部亲力亲为，力求用200%的付出换取最丰硕的果实，撕掉一切标签，把最完整的Lay Zhang带给大家。 
+  </view>
+  <view class="ss">
+    [{{qw}}]
+  </view>
+</view>
+<view class="footer">
+  <view class="lb">
+    歌曲列表
+  </view>
+  <view class="music-details" wx:for="{{cx}}" wx:key="index">
+    <text class="id">{{item.pid}}</text>
+    <text class="name">{{item.name}}</text>
+  </view>
+</view>
